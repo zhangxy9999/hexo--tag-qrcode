@@ -1,4 +1,7 @@
-<canvas id="qrcode"></canvas>
+<div id="qrcode" style="margin: 0 auto; padding-buttom: 100px; "></div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <script>
-    $('#qrcode').qrcode({width: 64,height: 64,text: "size doesn't matter"});
-</script> 
+    $('#qrcode').qrcode({width: 128,height: 128,text: "<%- link %>"});
+</script>

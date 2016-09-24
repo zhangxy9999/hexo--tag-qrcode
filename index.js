@@ -5,13 +5,16 @@ var fs = require('fs'),
 var filePath = path.join(__dirname, 'qrcode-template.html');
 
 
-function makeQRcode (args, content)
+function makeQRcode (args)
 {
-    var template = fs.readFileSync(filePath).toString();
+    var template = fs.readFileSync(filePath).toString(),
+        link;
 
     return _.template(template)({
-
+        link: args[0]
     });
 }
 
-hexo.extend.tag.register('qrcode', makeQRcode);
+hexo.extend.tag.register('qrcode', makeQRcode, {
+    async: true
+});
