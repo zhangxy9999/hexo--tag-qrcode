@@ -1,0 +1,28 @@
+{
+  "name": "hexo-tag-qrcode",
+  "version": "1.0.0",
+  "description": "Embed QR Code to your Hexo blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangxy9999/hexo-tag-qrcode.git"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "keywords": [
+    "Hexo",
+    "tag",
+    "qrcode",
+    "plugin"
+  ],
+  "author": "Rain Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangxy9999/hexo-tag-qrcode/issues"
+  },
+  "homepage": "https://github.com/zhangxy9999/hexo-tag-qrcode#readme"
+}
